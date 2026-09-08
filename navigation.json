@@ -1,0 +1,205 @@
+[
+  {
+    "label": "Start here",
+    "items": [
+      [
+        "Overview & integrations",
+        "/docs"
+      ],
+      [
+        "First request",
+        "/docs/quickstart"
+      ],
+      [
+        "Create a narrated image",
+        "/docs/narrated-image"
+      ],
+      [
+        "Browser Workbench",
+        "/docs/workbench"
+      ],
+      [
+        "Install & availability",
+        "/docs/installation"
+      ],
+      [
+        "Agent task recipes",
+        "/docs/recipes"
+      ]
+    ]
+  },
+  {
+    "label": "Wallet & setup",
+    "items": [
+      [
+        "Buyer Runtime",
+        "/docs/buyer-runtime"
+      ],
+      [
+        "Wallet, funding & budgets",
+        "/docs/wallet-security"
+      ]
+    ]
+  },
+  {
+    "label": "Integrations",
+    "items": [
+      [
+        "Direct x402 API",
+        "/docs/direct-api"
+      ],
+      [
+        "TypeScript & Python",
+        "/docs/sdk-examples"
+      ],
+      [
+        "CLI",
+        "/docs/cli"
+      ],
+      [
+        "MCP",
+        "/docs/mcp"
+      ],
+      [
+        "Claude Code",
+        "/docs/claude-code"
+      ],
+      [
+        "Local OpenAI proxy",
+        "/docs/proxy"
+      ],
+      [
+        "Agent Skill",
+        "/docs/agent-skill"
+      ],
+      [
+        "OpenClaw",
+        "/docs/openclaw"
+      ],
+      [
+        "Hermes Agent",
+        "/docs/hermes"
+      ],
+      [
+        "Model selection & routing",
+        "/docs/routing"
+      ]
+    ]
+  },
+  {
+    "label": "Capabilities",
+    "items": [
+      [
+        "Text & Messages formats",
+        "/docs/text"
+      ],
+      [
+        "Image generation",
+        "/docs/images"
+      ],
+      [
+        "Text to speech",
+        "/docs/speech"
+      ],
+      [
+        "Speech to text",
+        "/docs/transcription"
+      ],
+      [
+        "Models & pricing",
+        "/models"
+      ]
+    ]
+  },
+  {
+    "label": "Payments & recovery",
+    "items": [
+      [
+        "Request lifecycle",
+        "/docs/how-it-works"
+      ],
+      [
+        "Payments & receipts",
+        "/docs/payment-receipts"
+      ],
+      [
+        "Errors & recovery",
+        "/docs/errors-retries"
+      ],
+      [
+        "Caching",
+        "/docs/caching"
+      ]
+    ]
+  },
+  {
+    "label": "Reference",
+    "items": [
+      [
+        "All endpoints",
+        "/docs/endpoints"
+      ],
+      [
+        "Chat Completions",
+        "/docs/api/chat-completions"
+      ],
+      [
+        "Messages",
+        "/docs/api/messages"
+      ],
+      [
+        "Images",
+        "/docs/api/image-generations"
+      ],
+      [
+        "Speech",
+        "/docs/api/audio-speech"
+      ],
+      [
+        "Transcriptions",
+        "/docs/api/audio-transcriptions"
+      ],
+      [
+        "Voices",
+        "/docs/api/audio-voices"
+      ],
+      [
+        "Models",
+        "/docs/api/models"
+      ],
+      [
+        "Pricing",
+        "/docs/api/pricing"
+      ],
+      [
+        "Balance",
+        "/docs/api/balance"
+      ],
+      [
+        "Agent contracts",
+        "/docs/agents"
+      ],
+      [
+        "Wallet compatibility",
+        "/docs/wallet-compatibility"
+      ]
+    ]
+  },
+  {
+    "label": "About the service",
+    "items": [
+      [
+        "Availability & network",
+        "/docs/environments"
+      ],
+      [
+        "Privacy & retention",
+        "/docs/privacy"
+      ],
+      [
+        "Changelog",
+        "/docs/changelog"
+      ]
+    ]
+  }
+]
