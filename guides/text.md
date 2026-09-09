@@ -2,7 +2,7 @@
 title: Text generation & Messages
 description: Two familiar request formats for the same text capability.
 owner: Developer experience
-lastReviewed: 2026-09-05
+lastReviewed: 2026-09-09
 order: 70
 ---
 
@@ -16,7 +16,14 @@ do not shorten, decode, normalize or log them. Keep the assistant tool-use block
 
 `POST /v1/chat/completions` accepts OpenAI-compatible messages and returns choices. `POST /v1/messages` accepts Anthropic-compatible messages and returns content blocks. Both use the same enabled text models and USDC payment lifecycle.
 
-Choose Chat Completions for an OpenAI-style client; choose Messages for an Anthropic-style client. Neither format means that OpenAI or Anthropic models are currently offered. Gemini serves the current text catalog.
+Choose Chat Completions for an OpenAI-style client; choose Messages for an Anthropic-style client.
+The format does not choose the provider. Gemini uses Vertex; models with a `venice/` prefix use
+Venice. Read the live model catalog for availability and each model's supported capabilities.
+
+The catalog includes 93 Venice text models alongside Gemini on Vertex. This is a sampled release,
+not individual certification of every upstream option. Venice models support text; GPT-4o mini also
+supports tools and JSON. Encrypted-only Venice endpoints are not supported. Context and output limits
+are model-specific; higher-priced long-context tiers are not enabled. Images and speech are unchanged.
 
 ## Models and parameters
 

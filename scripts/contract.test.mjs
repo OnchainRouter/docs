@@ -1,10 +1,22 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { validateDocumentation, safeDocumentationLink, verifyDocumentationSnapshot, documentationRepository } from './contract.mjs';
 
 const page = '---\ntitle: Start\ndescription: Use the API.\nowner: Docs\nlastReviewed: 2026-09-08\norder: 1\n---\n# Start\n';
 const files = { 'index.md': page };
 const navigation = [{ label: 'Start', items: [['Overview', '/docs']] }];
+test('current provider guides agree on Venice availability without claiming exhaustive qualification', () => {
+  const guide = name => readFileSync(new URL('../guides/' + name + '.md', import.meta.url), 'utf8');
+  for (const name of ['text', 'quickstart', 'environments', 'privacy', 'routing']) {
+    const source = guide(name);
+    assert.match(source, /Venice|venice\//);
+    assert.doesNotMatch(source, /Gemini serves the current text catalog|Venice[^\n]*not yet public/);
+  }
+  assert.match(guide('text'), /sampled release/);
+  assert.match(guide('routing'), /not part of the published 0\.2\.0/);
+  assert.match(guide('privacy'), /provider-specific processing, retention/);
+});
 test('valid guides and pinned content pass', () => {
   const manifest = { schemaVersion: 1, repository: documentationRepository, branch: 'main', commit: 'a'.repeat(40), ...validateDocumentation(files, navigation) };
   assert.equal(verifyDocumentationSnapshot(files, navigation, manifest), manifest);

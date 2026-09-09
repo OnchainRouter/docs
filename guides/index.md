@@ -2,7 +2,7 @@
 title: Build with Onchain Router
 description: Choose an integration for text, images, and speech, with clear publication status and human-owned payment setup.
 owner: Developer experience
-lastReviewed: 2026-09-08
+lastReviewed: 2026-09-09
 order: 10
 ---
 
@@ -47,7 +47,7 @@ The current catalog determines which models and parameters work. The brand stays
 These guides are maintained in [OnchainRouter/docs](https://github.com/OnchainRouter/docs).
 The website, search and agent-readable Markdown use the same reviewed documentation snapshot.
 See [model selection and routing](/docs/routing) for the distinction between public features
-and upcoming Venice and automatic-routing work.
+and unpublished automatic-routing work. Venice text models are available through explicit model IDs.
 
 Use [live models](/v1/models), [live pricing](/v1/pricing), and [OpenAPI](/openapi.json). The HTTP 402 challenge determines the exact request price; the receipt confirms payment and normalized usage. See [pricing](/pricing) for the 0% service fee launch promotion and the separate fixed fee.
 
