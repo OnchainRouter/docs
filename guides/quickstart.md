@@ -2,7 +2,7 @@
 title: Make your first paid AI request
 description: Choose a text, image, or speech route, check its exact price, send one request on Base mainnet, and save the result and receipt.
 owner: Developer experience
-lastReviewed: 2026-09-04
+lastReviewed: 2026-09-09
 order: 40
 ---
 
@@ -53,7 +53,9 @@ Never use a primary or highly funded wallet.
 
 The five paid routes are Chat Completions, Messages, Image Generations, Text to Speech, and Speech to Text. The Models, Pricing, Voices, and Balance routes are free. Read the [endpoint overview](/docs/endpoints), then use `GET /v1/models` to select a compatible model and `GET /v1/pricing` to inspect its current billing unit.
 
-Gemini currently serves text and image generation. ElevenLabs Flash v2.5 serves MP3 text to speech, and Scribe v2 serves MP3 speech to text. The API contract remains provider-neutral as the catalog expands.
+Gemini uses Vertex for text and images. Models prefixed with `venice/` use Venice for text.
+ElevenLabs Flash v2.5 serves MP3 text to speech, and Scribe v2 serves MP3 speech to text.
+Check `/v1/models` for current availability, model IDs and capabilities; the API contract is provider-neutral.
 
 ## 3. Use an official x402 buyer
 

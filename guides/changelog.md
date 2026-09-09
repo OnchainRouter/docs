@@ -2,11 +2,20 @@
 title: Product changes and model retirement policy
 description: Review dated changes to the public interface, model catalog, pricing, payments, and documentation.
 owner: Release engineering
-lastReviewed: 2026-09-08
+lastReviewed: 2026-09-09
 order: 100
 ---
 
 # Product changes and model retirement policy
+
+## 2026-09-09 — Venice text catalog expansion
+
+- Released 93 compatible Venice text models alongside seven Gemini text models on Vertex.
+  Image and speech offerings are unchanged; the live catalog contains 103 models in total.
+- Verified ten randomly selected models with live provider calls, plus unsigned challenges for
+  all 93 models on both text endpoints. Sampling does not certify every model or advanced capability.
+- Updated provider, privacy and routing documentation to match the deployed release.
+  New local automatic-routing aliases remain outside the published 0.2.0 clients.
 
 ## 2026-09-08 — Public documentation source and routing status
 

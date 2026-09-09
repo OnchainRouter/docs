@@ -2,7 +2,7 @@
 title: Model selection and automatic routing
 description: Understand explicit model selection, experimental routing and which features are available today.
 owner: Developer experience
-lastReviewed: 2026-09-08
+lastReviewed: 2026-09-09
 order: 86
 ---
 
@@ -31,10 +31,15 @@ uncertain payment, or guarantee a quality or cost advantage for every task.
 
 ## Provider expansion
 
-The live catalog currently contains Gemini text and image models plus ElevenLabs speech models.
-Additional non-Google text models through Venice are under qualification and are not yet public.
-An implementation or a provider's model list is not evidence of Onchain Router availability:
-only use IDs returned by the live catalog.
+The September 9 release includes 93 Venice text models and seven Gemini text models on Vertex,
+alongside the existing Gemini image and ElevenLabs speech models. Venice uses explicit `venice/`
+model IDs on both text endpoints. Google models remain on Vertex; Venice encrypted-only models
+are not supported.
+
+Ten randomly selected models passed live provider inference checks. All 93 Venice models passed
+unsigned API challenge checks in both request formats. This is sampled compatibility evidence,
+not individual live inference certification or a paid customer test for every model. Only use IDs
+and capabilities returned by the live catalog; see [text generation](/docs/text) for limits.
 
 ## Caching is a different feature
 

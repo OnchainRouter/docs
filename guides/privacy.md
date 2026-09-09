@@ -2,7 +2,7 @@
 title: How request content is stored and deleted
 description: See which request content is stored, why it is needed, when it is deleted, and which sensitive values never enter logs or receipts.
 owner: Privacy and security
-lastReviewed: 2026-09-04
+lastReviewed: 2026-09-09
 order: 90
 ---
 
@@ -51,7 +51,11 @@ delete data held by ElevenLabs.
 
 ## Processing and deletion
 
-Google Vertex AI processes requests to generate text or images. ElevenLabs processes text-to-speech
+Google Vertex AI processes Gemini requests to generate text or images. Selected `venice/` text
+models send the normalized request to Venice and its applicable upstream model provider. Their
+provider-specific processing, retention and native prompt-cache policies are separate from our
+local deletion controls; do not assume that our deletion also deletes provider-held data.
+ElevenLabs processes text-to-speech
 and speech-to-text requests under the route-specific retention behavior above. Coinbase Developer
 Platform verifies and settles x402 payments, and Base records the public transaction. Each service
 receives only the information needed for its role. Encrypted prompt-review records and generated
