@@ -29,8 +29,10 @@ documentation-update process, checked against its API contracts, reviewed, and d
 the normal website release process. Merging here does **not** instantly change the live site.
 
 The same snapshot produces HTML, search, per-page Markdown and the complete agent documentation.
-The integration is initially being connected; until that website change is released, live pages
-may show the earlier snapshot.
+An hourly update check prepares a review branch when this repository changes. A maintainer reviews
+and releases that snapshot; changes are not automatically deployed. The website's
+[build metadata](https://onchainrouter.dev/build-metadata.json) records the consumed documentation
+commit after the integration release, so a merged edit can be distinguished from a deployed one.
 
 API references, model availability, prices, release-status tables and agent contracts are generated
 by the application from authoritative schemas, catalog and release evidence. They are intentionally
